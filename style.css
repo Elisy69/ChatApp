@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  background-color: grey;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #000000;
+}
+
+.wrapper {
+  width: 320px;
+  height: 533px;
+  background: #ffffff;
+}
+.options {
+  display: flex;
+}
+.settings {
+  width: 98px;
+  height: 32px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.exit {
+  width: 66px;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+.chatbox {
+  width: 304px;
+  height: 437px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.sentMessage {
+  padding: 0px;
+  margin: 4px 8px 4px 8px;
+}
+.recievedMessage {
+  padding: 0px;
+  margin: 4px 8px 4px 8px;
+}
+.messageForm {
+  display: flex;
+}
+.messageBox {
+  width: 267px;
+  height: 32px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+.sendMessageBtn {
+  width: 29px;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
