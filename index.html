@@ -10,26 +10,35 @@
   <body>
     <div class="wrapper">
       <div class="options">
-        <div class="settings">Settings</div>
+        <div data-popup-target="#settings" class="settingsBtn">Settings</div>
+        <div id="settings" class="settings">
+          <div class="hedaersettings">
+            <div class="textsettings">Settings</div>
+            <div data-close-button class="closeBtn">&times</div>
+          </div>
+          <div class="headerName">Chat nickname</div>
+          <form class="nameForm">
+            <input type="text" placeholder="Your name..." class="nameBox" />
+            <div class="sendNickBtn">-></div>
+          </form>
+        </div>
         <div class="exit">Exit</div>
       </div>
       <div class="chatbox">
-        <div class="sentMessage">Me: Hello!</div>
-        <div class="recievedMessage">Chat mate: Hey!</div>
-        <div class="recievedMessage">
-          Chat mate: This is a second message and it's too long to fit in one
-          line!
-        </div>
-        <div class="sentMessage">Me: Hello again!</div>
+        <template id="myMessage">
+          <div class="sentMessage">
+            <div class="sentMessageText"></div>
+            <div class="time">18:45</div>
+          </div>
+        </template>
       </div>
-      <form class="messageForm" onsubmit="return false">
-        <input
-          type="messageText"
-          placeholder="your message..."
-          class="messageBox"
-        />
-        <div class="sendMessageBtn">-></div>
+      <form class="messageForm">
+        <input type="text" placeholder="your message..." class="messageBox" />
+        <button type="submit" class="sendMessageBtn">-></button>
       </form>
     </div>
+    <div class="overlay"></div>
+    <script type="module" src="app.js"></script>
+    <script type="module" src="UI.js"></script>
   </body>
 </html>
